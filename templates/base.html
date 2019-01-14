@@ -2,6 +2,13 @@
 
 {% block title %} Blog {% endblock %}
 
+{% block head %}
+    {{ super() }}
+    <img class="icon-website" src="{{ url_for('static', filename='favicon.ico') }}">
+
+{% endblock %}
+
+
 {% block navbar %}
     <div class="navbar navbar-inverse" role="navigation">
         <div class="container">
